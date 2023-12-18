@@ -11,39 +11,42 @@ import { Counsel } from "./components/category/counsel";
 import { displayResolution } from "./global/project_commin";
 import { useEffect } from "react";
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Layout />,
-        errorElement: <NotFound />,
-        children: [
-            {
-                path: "",
-                element: <Home />,
-            },
-            {
-                path: "/about",
-                element: <About />,
-            },
-            {
-                path: "/premium",
-                element: <Premium />,
-            },
-            {
-                path: "/teeth",
-                element: <Teeth />,
-            },
-            {
-                path: "/community",
-                element: <Community />,
-            },
-            {
-                path: "/counsel",
-                element: <Counsel />,
-            },
-        ],
-    },
-]);
+const router = createBrowserRouter(
+    [
+        {
+            path: "/",
+            element: <Layout />,
+            errorElement: <NotFound />,
+            children: [
+                {
+                    path: "",
+                    element: <Home />,
+                },
+                {
+                    path: "/about",
+                    element: <About />,
+                },
+                {
+                    path: "/premium",
+                    element: <Premium />,
+                },
+                {
+                    path: "/teeth",
+                    element: <Teeth />,
+                },
+                {
+                    path: "/community",
+                    element: <Community />,
+                },
+                {
+                    path: "/counsel",
+                    element: <Counsel />,
+                },
+            ],
+        },
+    ],
+    { basename: "/instead_of_me_hospital/" }
+);
 
 function App() {
     const setDisplayResolution = useSetRecoilState(displayResolution);
