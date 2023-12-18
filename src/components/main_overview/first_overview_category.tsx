@@ -65,14 +65,14 @@ export function FirstOverviewCategory() {
                 <Wrapper>
                     <Center w="210px" h="210px" border="1px solid #c1c1c1">
                         <Image
-                            w="100%"
-                            h="100%"
+                            w="70%"
+                            h="70%"
                             filter="grayscale(100%)"
-                            src={require(`../../assets/yonsei_logo.png`)}
+                            src={require(`../../assets/hat.jpg`)}
                         />
                     </Center>
                     <Text fontSize="20px" mt="15px" fontWeight="600">
-                        연세대학교 / 의학박사
+                        의학박사
                     </Text>
                 </Wrapper>
                 <Wrapper>
@@ -92,7 +92,7 @@ export function FirstOverviewCategory() {
                         <Image
                             w="100px"
                             filter="grayscale(100%)"
-                            src={require(`../../assets/oral_surgery.png`)}
+                            src={require(`../../assets/face-chopping.png`)}
                         />
                     </Center>
                     <Text fontSize="20px" mt="15px" fontWeight="600">

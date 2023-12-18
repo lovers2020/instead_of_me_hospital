@@ -11,13 +11,13 @@ export function FirstOverViewMobile() {
                 style={{
                     position: "relative",
                     width: "100%",
-                    height: "100%",
                     marginTop: "50px",
+                    paddingBottom: "20px",
                 }}
             >
                 <Box w="100%" h="100%" textAlign="center">
+                    {/* 글씨 중간에 있는 선 */}
                     <Box margin="0 auto" position="relative" textAlign="center">
-                        {/* 글씨 중간에 있는 선 */}
                         <Box
                             w="90%"
                             position="absolute"
@@ -79,7 +79,7 @@ export function FirstOverViewMobile() {
                         치과 진료만 2003년부터...
                     </Heading>
                     <Text fontSize="12px" color="#444" display="block">
-                        연세대 치대 출신 의학박사 치과전문의가 경험을 바탕으로
+                        치대 출신 의학박사 치과전문의가 경험을 바탕으로
                         <br></br>
                         환자분들이 만족하실 수 있는 최상의 치료결과를
                         약속드립니다.

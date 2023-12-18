@@ -3,13 +3,13 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./components/layout";
 import NotFound from "./components/notfound";
 import Home from "./screen/home";
-import { About } from "./components/category/about";
 import { Premium } from "./components/category/premium";
 import { Teeth } from "./components/category/teeth";
 import { Community } from "./components/category/community";
 import { Counsel } from "./components/category/counsel";
 import { displayResolution } from "./global/project_commin";
 import { useEffect } from "react";
+import { About } from "./components/category/about";
 
 const router = createBrowserRouter(
     [

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const BannerBox = styled(motion.div)`
     position: absolute;
     top: 20px;
-    left: 30%;
+    left: 28%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ const BannerVariants = {
         opacity: 1,
         transition: {
             type: "tween",
-            duration: 0.8,
+            duration: 1,
             delayChildren: 0.3,
             staggerChildren: 0.2,
         },

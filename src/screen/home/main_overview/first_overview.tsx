@@ -83,7 +83,7 @@ export function FirstOverView() {
                         치과 진료만 2003년부터...
                     </Heading>
                     <Text fontSize="18px" color="#444" display="block">
-                        연세대 치대 출신 의학박사 치과전문의가 경험을 바탕으로
+                        치대 출신 의학박사 치과전문의가 경험을 바탕으로
                         <br></br>
                         환자분들이 만족하실 수 있는 최상의 치료결과를
                         약속드립니다.

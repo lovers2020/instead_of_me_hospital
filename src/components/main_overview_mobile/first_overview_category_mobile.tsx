@@ -65,11 +65,11 @@ export function FirstOverviewCategoryMobile() {
                             w="100%"
                             h="100%"
                             filter="grayscale(100%)"
-                            src={require(`../../assets/yonsei_logo.png`)}
+                            src={require(`../../assets/hat.jpg`)}
                         />
                     </Center>
                     <Text fontSize="14px" mt="15px" fontWeight="600">
-                        연세대학교 / 의학박사
+                        의학박사
                     </Text>
                 </Center>
                 <Center flexDir="column">
