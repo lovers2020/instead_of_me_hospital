@@ -1,6 +1,6 @@
 import { Box, Slide } from "@chakra-ui/react";
 import Logo from "./header/logo";
-import { HeaderTabMobile } from "./header/mobile/header_tab_mobile";
+import { HeaderTabMobile } from "./header/header_tab_mobile";
 import { useRecoilState } from "recoil";
 import { menuIsClicked } from "../global/project_commin";
 
@@ -48,9 +48,7 @@ export default function HeaderMobile() {
                         width: "50%",
                     }}
                 >
-                    <Box right="0" backgroundColor="white" minHeight="100%">
-                        <HeaderTabMobile />
-                    </Box>
+                    <HeaderTabMobile />
                 </Slide>
                 <Box
                     display={isClicked ? "block" : "none"}

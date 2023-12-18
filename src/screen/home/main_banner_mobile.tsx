@@ -12,7 +12,7 @@ const imgUrl = [firstImg, secondImg, thirdImg];
 const BannerVariants = {
     hidden: (dir: number) => {
         return {
-            x: 500 * dir,
+            x: window.innerWidth * dir,
             opacity: 0,
         };
     },
@@ -22,7 +22,7 @@ const BannerVariants = {
     },
     exit: (dir: number) => {
         return {
-            x: -500 * dir,
+            x: -window.innerWidth * dir,
             opacity: 0,
         };
     },
@@ -109,8 +109,8 @@ export default function MainBannerMobile() {
                         dragConstraints={{ left: 0, right: 0 }}
                         dragElastic={1}
                         onDragEnd={(e, { offset }) => {
-                            if (offset.x >= 300) onClickPrev();
-                            else if (offset.x <= -300) onClickNext();
+                            if (offset.x >= 100) onClickPrev();
+                            else if (offset.x <= -100) onClickNext();
                         }}
                         url={imgUrl[index]}
                     >

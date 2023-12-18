@@ -38,7 +38,7 @@ const BannerVariants = {
         opacity: 1,
         transition: {
             type: "tween",
-            duration: 1,
+            duration: 0.8,
             delayChildren: 0.3,
             staggerChildren: 0.2,
         },

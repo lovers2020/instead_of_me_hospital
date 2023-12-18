@@ -1,7 +1,6 @@
 import { Box, Center, Flex, Heading } from "@chakra-ui/react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
-import { Invisalign } from "./premium/invisalign";
 import { InvisalignMobile } from "./premium/invisalign_mobile";
 
 const InnerBox = styled.div<{ index?: number | null }>`

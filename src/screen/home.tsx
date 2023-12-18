@@ -9,17 +9,11 @@ import { displayResolution } from "../global/project_commin";
 import MainBannerMobile from "./home/main_banner_mobile";
 import { FirstOverViewMobile } from "./home/main_overview_mobile/first_overview_mobile";
 import { SecondOverviewMobile } from "./home/main_overview_mobile/second_overview_mobile";
-import { useMotionValueEvent, useScroll } from "framer-motion";
 import { ThirdOverViewMobile } from "./home/main_overview_mobile/third_overview_mobile";
 import { FourthOverViewMobile } from "./home/main_overview_mobile/fourth_overview_mobile";
-import { refresh } from "../utils/util";
 
 export default function Home() {
     const setDisplayResolution = useRecoilValue(displayResolution);
-    const { scrollY } = useScroll();
-    useMotionValueEvent(scrollY, "change", (y) => {
-        if (y <= -100) refresh();
-    });
     return (
         <>
             <Helmet>

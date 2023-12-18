@@ -1,5 +1,4 @@
-import { Box, Center, Flex, Image, Text } from "@chakra-ui/react";
-import styled from "styled-components";
+import { Center, Flex, Image, Text } from "@chakra-ui/react";
 
 export function FirstOverviewCategoryMobile() {
     return (

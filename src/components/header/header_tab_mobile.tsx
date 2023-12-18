@@ -6,6 +6,9 @@ import { CategoryMobile } from "./categoty_mobile";
 
 const Box = styled.div`
     height: 100%;
+    right: 0;
+    background-color: white;
+    min-height: 100%;
     #clicked {
         background-color: #84619a;
         color: white;

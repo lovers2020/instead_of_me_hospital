@@ -45,7 +45,7 @@ const router = createBrowserRouter(
             ],
         },
     ],
-    { basename: "/instead_of_me_hospital/" }
+    { basename: "/instead_of_me_hospital" }
 );
 
 function App() {

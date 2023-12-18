@@ -1,5 +1,6 @@
 {
     "name": "hospital",
+    "homepage": "https://lovers2020.github.io/instead_of_me_hospital/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -16,7 +17,6 @@
         "@types/react": "^18.2.33",
         "@types/react-dom": "^18.2.14",
         "framer-motion": "^10.16.4",
-        "gh-pages": "^6.1.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-helmet": "^6.1.0",
@@ -35,7 +35,9 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -58,6 +60,7 @@
     "devDependencies": {
         "@types/react-helmet": "^6.1.8",
         "@types/react-router-dom": "^5.3.3",
-        "@types/styled-components": "^5.1.29"
+        "@types/styled-components": "^5.1.29",
+        "gh-pages": "^6.1.0"
     }
 }
