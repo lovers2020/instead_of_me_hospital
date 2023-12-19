@@ -1,4 +1,4 @@
-import { Box, Fade, Slide, Text } from "@chakra-ui/react";
+import { Box, Fade, Text } from "@chakra-ui/react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
 

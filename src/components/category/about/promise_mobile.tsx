@@ -14,7 +14,7 @@ export function PromiseMobile() {
                 h="100%"
                 position="relative"
                 backgroundColor="white"
-                py="30px"
+                py="50px"
             >
                 <Center h="100%" m="0 auto" flexDir="column">
                     <Box w="50px" borderBottom="2px solid #603988"></Box>
@@ -54,7 +54,8 @@ export function PromiseMobile() {
                     </Text>
                     <Text fontSize="13px" px="15px">
                         치과치료 시 시설이나 비용보다도 중요한 점은{" "}
-                        <InnerText>의료진의 실력과 경험</InnerText>입니다.
+                        <InnerText>의료진의 실력과 경험</InnerText>
+                        입니다.
                         <br></br>
                         대한민국치과는 지인 소개로 찾아오시는 분들의 비율이 매우
                         높습니다.<br></br>

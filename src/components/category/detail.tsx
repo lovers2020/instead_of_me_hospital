@@ -1,10 +1,6 @@
 import { Box, Center, Flex, Heading } from "@chakra-ui/react";
 import styled from "styled-components";
-import { useRecoilValue } from "recoil";
-import { displayResolution } from "../../global/project_commin";
-import { AboutMobile } from "./about_mobile";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 
 const InnerBox = styled.button<{ index?: number | null }>`
     width: 100%;
@@ -35,7 +31,6 @@ const InnerBox = styled.button<{ index?: number | null }>`
 
 export function Detail({ list, path }: any) {
     const [number, setNumber] = useState(0);
-    const isWeb = useRecoilValue(displayResolution);
     useEffect(() => {
         switch (path) {
             case "teeth":
@@ -48,54 +43,46 @@ export function Detail({ list, path }: any) {
 
     return (
         <>
-            {isWeb === "web" ? (
-                <>
-                    <Box
-                        position="relative"
-                        mt="154px"
-                        w="100%"
-                        h="300px"
-                        backgroundSize="cover"
-                        backgroundImage={require("../../assets/work4.jpg")}
+            <>
+                <Box
+                    position="relative"
+                    mt="154px"
+                    w="100%"
+                    h="300px"
+                    backgroundSize="cover"
+                    backgroundImage={require("../../assets/work4.jpg")}
+                >
+                    <Center
+                        maxWidth="1200px"
+                        h="100%"
+                        m=" auto"
+                        justifyContent="space-between"
+                        py="60px"
+                        flexDir="column"
                     >
-                        <Center
-                            maxWidth="1200px"
-                            h="100%"
-                            m=" auto"
-                            justifyContent="space-between"
-                            py="60px"
-                            flexDir="column"
+                        <Heading
+                            mt="30px"
+                            fontSize="32px"
+                            color="#bfbfbf"
+                            letterSpacing="14px"
+                            fontWeight="200"
                         >
-                            <Heading
-                                mt="30px"
-                                fontSize="32px"
-                                color="#bfbfbf"
-                                letterSpacing="14px"
-                                fontWeight="200"
-                            >
-                                KOREA ORTHODONTIC CLINIC
-                            </Heading>
-                            <Flex
-                                backgroundColor="white"
-                                w="100%"
-                                fontSize="20px"
-                            >
-                                {list.map((i: any, index: any) => (
-                                    <InnerBox
-                                        index={number + 1}
-                                        key={index}
-                                        onClick={() => setNumber(index)}
-                                    >
-                                        {i}
-                                    </InnerBox>
-                                ))}
-                            </Flex>
-                        </Center>
-                    </Box>
-                </>
-            ) : (
-                <AboutMobile />
-            )}
+                            KOREA ORTHODONTIC CLINIC
+                        </Heading>
+                        <Flex backgroundColor="white" w="100%" fontSize="20px">
+                            {list.map((i: string, index: number) => (
+                                <InnerBox
+                                    index={number + 1}
+                                    key={index}
+                                    onClick={() => setNumber(index)}
+                                >
+                                    {i}
+                                </InnerBox>
+                            ))}
+                        </Flex>
+                    </Center>
+                </Box>
+            </>
         </>
     );
 }

@@ -32,20 +32,21 @@ const noticeDate = [
     "2022-12-13",
     "2022-11-28",
 ];
-export function Notice() {
+export function NoticeMobile() {
     return (
         <>
             <Box
-                width="100%"
+                width="85%"
+                margin="0 auto"
                 h="100%"
-                py="100px"
+                py="50px"
                 position="relative"
                 backgroundColor="white"
             >
-                <Center maxWidth="1200px" h="100%" m="0 auto" flexDir="column">
-                    <Box w="100px" borderBottom="2px solid #603988"></Box>
+                <Center h="100%" m="0 auto" flexDir="column">
+                    <Box w="50px" borderBottom="2px solid #603988"></Box>
                     <Heading
-                        fontSize="60px"
+                        fontSize="32px"
                         color="#222"
                         my="10px"
                         fontWeight="600"
@@ -56,21 +57,24 @@ export function Notice() {
                         textAlign="center"
                         color="#bfbfbf"
                         fontWeight="300"
-                        letterSpacing="10px"
+                        letterSpacing="4px"
+                        fontSize="10px"
                     >
                         NEWS & NOTICE
                     </Text>
                     <Box w="100%" borderTop="2px solid black" mt="80px">
                         <Flex
                             justify="space-between"
-                            p="20px 25px"
+                            p="10px 20px"
                             w="100%"
-                            fontSize="20px"
+                            fontSize="16px"
                             borderBottom="1px solid black"
                             textAlign="center"
                         >
                             <Text>번호</Text>
-                            <Text w="56%">제목</Text>
+                            <Text w="27%" textAlign="start">
+                                제목
+                            </Text>
                             <Text>등록일</Text>
                             <Text>조회수</Text>
                         </Flex>
@@ -79,7 +83,7 @@ export function Notice() {
                                 justify="space-between"
                                 p="20px 30px"
                                 w="100%"
-                                fontSize="18px"
+                                fontSize="10px"
                                 borderBottom="1px solid #c1c1c1"
                                 textAlign="start"
                                 alignItems="center"
@@ -88,14 +92,12 @@ export function Notice() {
                                 }}
                                 key={index}
                             >
-                                <Text w="20px" px="10px">
-                                    {14 - index}
-                                </Text>
-                                <Text w="60%" px="10px">
+                                <Text w="10px">{14 - index}</Text>
+                                <Text w="37%" px="10px">
                                     {current}
                                 </Text>
-                                <Text w="110px">{noticeDate[index]}</Text>
-                                <Text w="40px" textAlign="center">
+                                <Text w="70px">{noticeDate[index]}</Text>
+                                <Text w="20px" textAlign="center">
                                     {Math.ceil(Math.random() * 300)}
                                 </Text>
                             </Flex>

@@ -1,30 +1,46 @@
 import { Box, Center, Flex, Heading } from "@chakra-ui/react";
-import { useLocation } from "react-router-dom";
 import styled from "styled-components";
-import { PromiseMobile } from "./about/promise_mobile";
+import { useEffect, useState } from "react";
 
-const InnerBox = styled.div<{ index?: number | null }>`
+const InnerBox = styled.div<{ index?: number; path?: string }>`
     border-right: 1px solid #bfbfbf;
     border-bottom: 1px solid #bfbfbf;
-    width: 33.3%;
-    cursor: pointer;
-    text-align: center;
-    font-weight: 500;
+    width: ${(props) => (props.path === "counsel" ? "100%" : "33.33%")};
     padding: 10px 0;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+        background-color: #34343c;
+        color: white;
+    }
 
+    &:nth-child(${(props) => (props.path === "premium" ? 3 : null)}) {
+        border-right: none;
+    }
     &:last-child {
         border-right: none;
     }
     &:nth-child(${(props) => props.index}) {
+        border-right: none;
         background-color: #603988;
         color: white;
     }
 `;
 
-export function AboutMobile() {
-    const location = useLocation().pathname;
-    let index: number | null = 0;
-    index = location === "/about" ? 1 : null;
+export function DetailMobile({ list, path }: any) {
+    const [number, setNumber] = useState(0);
+    useEffect(() => {
+        switch (path) {
+            case "teeth":
+                setNumber(3);
+                break;
+            case "community":
+                setNumber(5);
+        }
+    }, []);
+
     return (
         <>
             <Box
@@ -56,16 +72,21 @@ export function AboutMobile() {
                         align="center"
                         backgroundColor="white"
                         fontSize="12px"
+                        flexWrap={path === "premium" ? "wrap" : "nowrap"}
                     >
-                        <InnerBox index={index}>우리의 약속</InnerBox>
-                        <InnerBox>진료시간 안내</InnerBox>
-                        <InnerBox>인테리어</InnerBox>
-                        <InnerBox>오시는길</InnerBox>
-                        <InnerBox>주차안내</InnerBox>
+                        {list.map((i: string, index: number) => (
+                            <InnerBox
+                                index={number + 1}
+                                key={index}
+                                onClick={() => setNumber(index)}
+                                path={path}
+                            >
+                                {i}
+                            </InnerBox>
+                        ))}
                     </Flex>
                 </Center>
             </Box>
-            <PromiseMobile></PromiseMobile>
         </>
     );
 }

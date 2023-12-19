@@ -1,8 +1,9 @@
 import { useRecoilValue } from "recoil";
 import { detailList, displayResolution } from "../../global/project_commin";
-import { TeethMobile } from "./teeth_mobile";
 import { Detail } from "./detail";
 import { Progress } from "./teeth/progress";
+import { DetailMobile } from "./detail_mobile";
+import { ProgressMobile } from "./teeth/progress_mobile";
 
 export function Teeth() {
     const isWeb = useRecoilValue(displayResolution);
@@ -10,11 +11,17 @@ export function Teeth() {
         <>
             {isWeb === "web" ? (
                 <>
-                    <Detail list={detailList[2]} path={"teeth"}></Detail>
+                    <Detail list={detailList[2]} path="teeth"></Detail>
                     <Progress />
                 </>
             ) : (
-                <TeethMobile />
+                <>
+                    <DetailMobile
+                        list={detailList[2]}
+                        path="teeth"
+                    ></DetailMobile>
+                    <ProgressMobile />
+                </>
             )}
         </>
     );

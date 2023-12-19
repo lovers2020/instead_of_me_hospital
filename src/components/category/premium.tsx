@@ -1,8 +1,9 @@
 import { Invisalign } from "./premium/invisalign";
 import { useRecoilValue } from "recoil";
 import { detailList, displayResolution } from "../../global/project_commin";
-import { PremiumMobile } from "./premium_mobile";
 import { Detail } from "./detail";
+import { InvisalignMobile } from "./premium/invisalign_mobile";
+import { DetailMobile } from "./detail_mobile";
 
 export function Premium() {
     const isWeb = useRecoilValue(displayResolution);
@@ -11,11 +12,14 @@ export function Premium() {
         <>
             {isWeb === "web" ? (
                 <>
-                    <Detail list={detailList[1]} path={"premium"}></Detail>
+                    <Detail list={detailList[1]} path="premium"></Detail>
                     <Invisalign />
                 </>
             ) : (
-                <PremiumMobile />
+                <>
+                    <DetailMobile list={detailList[1]} path="premium" />
+                    <InvisalignMobile />
+                </>
             )}
         </>
     );

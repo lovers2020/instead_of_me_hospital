@@ -14,13 +14,7 @@ export function InvisalignMobile() {
                 backgroundRepeat="no-repeat"
                 backgroundImage={require("../../../assets/premium-1.jpg")}
             >
-                <Center
-                    maxWidth="1200px"
-                    m="auto"
-                    flexDir="column"
-                    py="50"
-                    color="white"
-                >
+                <Center m="auto" flexDir="column" py="50px" color="white">
                     <Box w="50px" borderBottom="2px solid black"></Box>
                     <Text mt="10px" fontSize="20px">
                         글로벌 투명 교정장치

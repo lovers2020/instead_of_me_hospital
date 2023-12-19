@@ -1,8 +1,11 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { go_to_top } from "../../../utils/util";
-import { menuIsClicked } from "../../../global/project_commin";
-import { useSetRecoilState } from "recoil";
+import {
+    displayResolution,
+    menuIsClicked,
+} from "../../../global/project_commin";
+import { useRecoilValue, useSetRecoilState } from "recoil";
 
 interface ILogoText {
     text?: string;
@@ -11,6 +14,7 @@ interface ILogoText {
 }
 
 export default function Logo({ text, hideHeader, fontsize }: ILogoText) {
+    const isWeb = useRecoilValue(displayResolution);
     const setIsClicked = useSetRecoilState(menuIsClicked);
     const navigate = useNavigate();
     const location = useLocation();
@@ -28,7 +32,8 @@ export default function Logo({ text, hideHeader, fontsize }: ILogoText) {
             }}
             onClick={onLogoClicked}
             transition="0.3s"
-            width="100%"
+            width={isWeb === "web" ? "100%" : "50%"}
+            margin={isWeb === "web" ? "0" : "auto"}
             marginTop={!hideHeader ? "5px" : "20px"}
         >
             <Box mr="15px">
