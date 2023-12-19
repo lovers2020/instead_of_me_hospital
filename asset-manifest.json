@@ -1,9 +1,16 @@
 {
   "files": {
     "main.css": "/instead_of_me_hospital/static/css/main.a87c4b34.css",
-    "main.js": "/instead_of_me_hospital/static/js/main.037000a4.js",
+    "main.js": "/instead_of_me_hospital/static/js/main.55c518a4.js",
     "static/media/dentist2.jpg": "/instead_of_me_hospital/static/media/dentist2.39ee2c0ad0d536c943c5.jpg",
     "static/media/clinic.jpg": "/instead_of_me_hospital/static/media/clinic.6b51fc98c289fc47d94c.jpg",
+    "static/media/progress-4.jpg": "/instead_of_me_hospital/static/media/progress-4.4d176256bd92ce148f07.jpg",
+    "static/media/progress-2.jpg": "/instead_of_me_hospital/static/media/progress-2.de57112b8808dba6257c.jpg",
+    "static/media/progress-3.jpg": "/instead_of_me_hospital/static/media/progress-3.a8292302ab7c2ee88a5b.jpg",
+    "static/media/progress-1.jpg": "/instead_of_me_hospital/static/media/progress-1.1e6afc083f4b62872597.jpg",
+    "static/media/hat.jpg": "/instead_of_me_hospital/static/media/hat.6f218d35cd780bb38bad.jpg",
+    "static/media/progress-6.jpg": "/instead_of_me_hospital/static/media/progress-6.9e31de200b4d2183aaa2.jpg",
+    "static/media/progress-5.jpg": "/instead_of_me_hospital/static/media/progress-5.5729febf180a8c15f7e4.jpg",
     "static/media/work4.jpg": "/instead_of_me_hospital/static/media/work4.e963eea8b9b0660ddaa7.jpg",
     "static/media/Pretendard-Black.subset.woff": "/instead_of_me_hospital/static/media/Pretendard-Black.subset.d87959822e5e862cba50.woff",
     "static/media/Pretendard-ExtraBold.subset.woff": "/instead_of_me_hospital/static/media/Pretendard-ExtraBold.subset.18db997881f69f9eedea.woff",
@@ -39,16 +46,15 @@
     "static/media/태극기.png": "/instead_of_me_hospital/static/media/태극기.caaa53502a33cc019e3d.png",
     "static/media/overview-9_mobile.jpg": "/instead_of_me_hospital/static/media/overview-9_mobile.26a6c3066cd063530501.jpg",
     "static/media/dentist5_mobile.jpg": "/instead_of_me_hospital/static/media/dentist5_mobile.ff6a281433d86d686ac2.jpg",
-    "static/media/yonsei_logo.png": "/instead_of_me_hospital/static/media/yonsei_logo.3d68920710b453004abf.png",
-    "static/media/oral_surgery.png": "/instead_of_me_hospital/static/media/oral_surgery.af0d2d9261be658e1847.png",
+    "static/media/face-chopping.png": "/instead_of_me_hospital/static/media/face-chopping.93134685079f486e3106.png",
     "static/media/보건복지부_로고.png": "/instead_of_me_hospital/static/media/보건복지부_로고.b301726d5126f24d2480.png",
     "static/media/invisalign.png": "/instead_of_me_hospital/static/media/invisalign.1417a7a4833d08d435b9.png",
     "index.html": "/instead_of_me_hospital/index.html",
     "main.a87c4b34.css.map": "/instead_of_me_hospital/static/css/main.a87c4b34.css.map",
-    "main.037000a4.js.map": "/instead_of_me_hospital/static/js/main.037000a4.js.map"
+    "main.55c518a4.js.map": "/instead_of_me_hospital/static/js/main.55c518a4.js.map"
   },
   "entrypoints": [
     "static/css/main.a87c4b34.css",
-    "static/js/main.037000a4.js"
+    "static/js/main.55c518a4.js"
   ]
 }
