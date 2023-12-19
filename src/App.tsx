@@ -1,7 +1,7 @@
 import { useSetRecoilState } from "recoil";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Layout from "./components/layout";
-import NotFound from "./components/notfound";
+import Layout from "./components/common/layout";
+import NotFound from "./components/common/notfound";
 import Home from "./screen/home";
 import { Premium } from "./components/category/premium";
 import { Teeth } from "./components/category/teeth";

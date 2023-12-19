@@ -1,7 +1,7 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { go_to_top } from "../../utils/util";
-import { menuIsClicked } from "../../global/project_commin";
+import { go_to_top } from "../../../utils/util";
+import { menuIsClicked } from "../../../global/project_commin";
 import { useSetRecoilState } from "recoil";
 
 interface ILogoText {
@@ -35,7 +35,7 @@ export default function Logo({ text, hideHeader, fontsize }: ILogoText) {
                 <Image
                     w="50px"
                     h="50px"
-                    src={require("../../assets/태극기.png")}
+                    src={require("../../../assets/태극기.png")}
                 ></Image>
             </Box>
             <Text fontSize={fontsize} fontWeight="bold" color="rgba(0,0,0,0.7)">

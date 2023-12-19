@@ -2,7 +2,7 @@ import { Box, Center, Collapse, Flex, Text } from "@chakra-ui/react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { detailList } from "../../global/project_commin";
+import { detailList } from "../../../global/project_commin";
 
 export function Category({ title, number, ishover, menu }: any) {
     const [hoverTab, setHoverTab] = useState(false);

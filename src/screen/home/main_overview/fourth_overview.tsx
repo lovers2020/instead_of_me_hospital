@@ -1,4 +1,4 @@
-import { Box, Slide, Text } from "@chakra-ui/react";
+import { Box, Fade, Text } from "@chakra-ui/react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
 
@@ -14,9 +14,8 @@ export function FourthOverView() {
     });
     return (
         <>
-            <Slide
+            <Fade
                 in={showOverview}
-                direction="bottom"
                 transition={{ enter: { duration: 0.5 } }}
                 style={{
                     position: "relative",
@@ -65,7 +64,7 @@ export function FourthOverView() {
                         </Box>
                     </Box>
                 </Box>
-            </Slide>
+            </Fade>
         </>
     );
 }

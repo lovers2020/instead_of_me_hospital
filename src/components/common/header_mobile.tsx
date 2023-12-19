@@ -2,7 +2,7 @@ import { Box, Slide } from "@chakra-ui/react";
 import Logo from "./header/logo";
 import { HeaderTabMobile } from "./header/header_tab_mobile";
 import { useRecoilState } from "recoil";
-import { menuIsClicked } from "../global/project_commin";
+import { menuIsClicked } from "../../global/project_commin";
 
 export default function HeaderMobile() {
     const [isClicked, setIsClicked] = useRecoilState(menuIsClicked);

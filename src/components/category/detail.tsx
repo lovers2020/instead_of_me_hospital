@@ -3,12 +3,14 @@ import styled from "styled-components";
 import { useRecoilValue } from "recoil";
 import { displayResolution } from "../../global/project_commin";
 import { AboutMobile } from "./about_mobile";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const InnerBox = styled.button<{ index?: number | null }>`
     width: 100%;
     background-color: white;
     border: none;
+    outline: none;
     border-right: 1px solid #bfbfbf;
     padding: 10px 30px;
     cursor: pointer;
@@ -34,6 +36,15 @@ const InnerBox = styled.button<{ index?: number | null }>`
 export function Detail({ list, path }: any) {
     const [number, setNumber] = useState(0);
     const isWeb = useRecoilValue(displayResolution);
+    useEffect(() => {
+        switch (path) {
+            case "teeth":
+                setNumber(3);
+                break;
+            case "community":
+                setNumber(5);
+        }
+    }, []);
 
     return (
         <>

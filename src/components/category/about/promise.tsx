@@ -20,7 +20,7 @@ export function Promise() {
                     <Heading
                         fontSize="60px"
                         color="#222"
-                        my="40px"
+                        my="10px"
                         fontWeight="600"
                     >
                         우리의 약속
