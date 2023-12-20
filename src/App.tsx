@@ -10,6 +10,7 @@ import { Counsel } from "./components/category/counsel";
 import { displayResolution } from "./global/project_commin";
 import { useEffect } from "react";
 import { About } from "./components/category/about";
+import { Helmet } from "react-helmet";
 
 const router = createBrowserRouter(
     [
