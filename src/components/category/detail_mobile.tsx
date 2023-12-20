@@ -11,10 +11,6 @@ const InnerBox = styled.div<{ index?: number; path?: string }>`
     font-size: 11px;
     font-weight: 500;
     cursor: pointer;
-    &:hover {
-        background-color: #34343c;
-        color: white;
-    }
 
     &:nth-child(${(props) => (props.path === "premium" ? 3 : null)}) {
         border-right: none;

@@ -1,5 +1,5 @@
-import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
-import { useForm, FieldErrors } from "react-hook-form";
+import { Box, Center, Heading, Text } from "@chakra-ui/react";
+import { useForm } from "react-hook-form";
 import styled from "styled-components";
 import { useState } from "react";
 
@@ -21,20 +21,24 @@ const Wrapper = styled.div`
     align-items: center;
     border-bottom: 1px solid #c1c1c1;
 `;
-const Title = styled.span`
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    padding: 10px 0;
-    width: 80%;
+const ColumnLeft = styled.div`
+    background-color: #f9f7fb;
+    width: 35%;
     height: 100%;
+    padding: 10px 0;
+    text-align: center;
+`;
+const ColumnRight = styled.div`
+    width: 60%;
+`;
+const Title = styled.span`
     font-size: 12px;
     background-color: #f9f7fb;
 `;
 const Warn = styled.p`
     position: absolute;
-    top: 30px;
-    left: 154px;
+    top: 35px;
+    left: 130px;
     color: red;
     font-size: 0.4rem;
     font-weight: 700;
@@ -42,13 +46,13 @@ const Warn = styled.p`
 const InputNamePw = styled.input`
     border: 1px solid #c1c1c1;
     margin-left: 10px;
-    width: 100%;
+    width: 95%;
     height: 20px;
 `;
 const InputPhone = styled.input`
     border: 1px solid #c1c1c1;
     margin-left: 10px;
-    width: 26%;
+    width: 25%;
     height: 20px;
 `;
 const SubmitBtn = styled.button`
@@ -122,77 +126,92 @@ export function CounselFormMobile() {
                     >
                         <Center flexDir="column">
                             <Wrapper>
-                                <Title>작성자</Title>
-                                <InputNamePw
-                                    type="text"
-                                    {...register("name", {
-                                        required: "이름을 입력해 주세요.",
-                                        minLength: {
-                                            value: 2,
-                                            message:
-                                                "2글자 이상 입력해 주세요.",
-                                        },
-                                    })}
-                                ></InputNamePw>
+                                <ColumnLeft>
+                                    <Title>작성자</Title>
+                                </ColumnLeft>
+                                <ColumnRight>
+                                    <InputNamePw
+                                        type="text"
+                                        {...register("name", {
+                                            required: "이름을 입력해 주세요.",
+                                            minLength: {
+                                                value: 2,
+                                                message:
+                                                    "2글자 이상 입력해 주세요.",
+                                            },
+                                        })}
+                                    ></InputNamePw>
+                                </ColumnRight>
+
                                 <Warn>{errors.name?.message}</Warn>
                             </Wrapper>
                             <Wrapper>
-                                <Title>비밀번호</Title>
-                                <InputNamePw
-                                    type="password"
-                                    {...register("password", {
-                                        required: "비밀번호를 입력해 주세요.",
-                                        minLength: {
-                                            value: 4,
-                                            message:
-                                                "4글자 이상 입력해 주세요.",
-                                        },
-                                    })}
-                                ></InputNamePw>
+                                <ColumnLeft>
+                                    <Title>비밀번호</Title>
+                                </ColumnLeft>
+                                <ColumnRight>
+                                    <InputNamePw
+                                        type="password"
+                                        {...register("password", {
+                                            required:
+                                                "비밀번호를 입력해 주세요.",
+                                            minLength: {
+                                                value: 4,
+                                                message:
+                                                    "4글자 이상 입력해 주세요.",
+                                            },
+                                        })}
+                                    ></InputNamePw>
+                                </ColumnRight>
+
                                 <Warn>{errors.password?.message}</Warn>
                             </Wrapper>
                             <Wrapper>
-                                <Title>연락처</Title>
-                                <InputPhone
-                                    type="number"
-                                    {...register("phone", {
-                                        required:
-                                            "휴대폰 번호를 입력해 주세요.",
-                                        maxLength: {
-                                            value: 4,
-                                            message:
-                                                "4글자 이하로 입력해 주세요",
-                                        },
-                                    })}
-                                ></InputPhone>
-                                <div style={{ margin: "0 5px" }}>-</div>
-                                <InputPhone
-                                    style={{ margin: "0" }}
-                                    type="number"
-                                    {...register("phone_middle", {
-                                        required:
-                                            "휴대폰 번호를 입력해 주세요.",
-                                        maxLength: {
-                                            value: 4,
-                                            message:
-                                                "4글자 이하로 입력해 주세요.",
-                                        },
-                                    })}
-                                ></InputPhone>
-                                <div style={{ margin: "0 5px" }}>-</div>
-                                <InputPhone
-                                    style={{ margin: "0" }}
-                                    type="number"
-                                    {...register("phone_last", {
-                                        required:
-                                            "휴대폰 번호를 입력해 주세요.",
-                                        maxLength: {
-                                            value: 4,
-                                            message:
-                                                "4글자 이하로 입력해 주세요.",
-                                        },
-                                    })}
-                                ></InputPhone>
+                                <ColumnLeft>
+                                    <Title>연락처</Title>
+                                </ColumnLeft>
+                                <ColumnRight>
+                                    <InputPhone
+                                        type="number"
+                                        {...register("phone", {
+                                            required:
+                                                "휴대폰 번호를 입력해 주세요.",
+                                            maxLength: {
+                                                value: 4,
+                                                message:
+                                                    "4글자 이하로 입력해 주세요",
+                                            },
+                                        })}
+                                    ></InputPhone>
+                                    {" - "}
+                                    <InputPhone
+                                        style={{ margin: "0" }}
+                                        type="number"
+                                        {...register("phone_middle", {
+                                            required:
+                                                "휴대폰 번호를 입력해 주세요.",
+                                            maxLength: {
+                                                value: 4,
+                                                message:
+                                                    "4글자 이하로 입력해 주세요.",
+                                            },
+                                        })}
+                                    ></InputPhone>
+                                    {" - "}
+                                    <InputPhone
+                                        style={{ margin: "0" }}
+                                        type="number"
+                                        {...register("phone_last", {
+                                            required:
+                                                "휴대폰 번호를 입력해 주세요.",
+                                            maxLength: {
+                                                value: 4,
+                                                message:
+                                                    "4글자 이하로 입력해 주세요.",
+                                            },
+                                        })}
+                                    ></InputPhone>
+                                </ColumnRight>
                                 <Warn>
                                     {errors.phone?.message ||
                                         errors.phone_last?.message ||
@@ -200,52 +219,56 @@ export function CounselFormMobile() {
                                 </Warn>
                             </Wrapper>
                             <Wrapper>
-                                <Title>제목</Title>
-                                <InputNamePw
-                                    type="text"
-                                    {...register("title", {
-                                        required: "제목을 입력해 주세요.",
-                                        minLength: {
-                                            value: 2,
-                                            message:
-                                                "2글자 이상 입력해 주세요.",
-                                        },
-                                    })}
-                                ></InputNamePw>
+                                <ColumnLeft>
+                                    <Title>제목</Title>
+                                </ColumnLeft>
+                                <ColumnRight>
+                                    <InputNamePw
+                                        type="text"
+                                        {...register("title", {
+                                            required: "제목을 입력해 주세요.",
+                                            minLength: {
+                                                value: 2,
+                                                message:
+                                                    "2글자 이상 입력해 주세요.",
+                                            },
+                                        })}
+                                    ></InputNamePw>
+                                </ColumnRight>
+
                                 <Warn>{errors.title?.message}</Warn>
                             </Wrapper>
                             <Wrapper>
-                                <Title
-                                    style={{
-                                        height: "100%",
-                                        padding: "30px 0",
-                                    }}
-                                >
-                                    내용
-                                </Title>
-                                <textarea
-                                    style={{
-                                        width: "98%",
-                                        height: "100%",
-                                        border: "1px solid #c1c1c1",
-                                        padding: "5px",
-                                        marginLeft: "10px",
-                                        fontFamily: "Pretendard",
-                                    }}
-                                    {...register("contents", {
-                                        required: "내용을 입력해 주세요.",
-                                        minLength: {
-                                            value: 2,
-                                            message:
-                                                "2글자 이상 입력해 주세요.",
-                                        },
-                                    })}
-                                ></textarea>
+                                <ColumnLeft>
+                                    <Title>내용</Title>
+                                </ColumnLeft>
+                                <ColumnRight>
+                                    <textarea
+                                        style={{
+                                            padding: "0",
+                                            width: "100%",
+                                            border: "1px solid #c1c1c1",
+                                            marginLeft: "10px",
+                                            fontFamily: "Pretendard",
+                                        }}
+                                        {...register("contents", {
+                                            required: "내용을 입력해 주세요.",
+                                            minLength: {
+                                                value: 2,
+                                                message:
+                                                    "2글자 이상 입력해 주세요.",
+                                            },
+                                        })}
+                                    ></textarea>
+                                </ColumnRight>
                             </Wrapper>
                             <Wrapper>
-                                <Title style={{ width: "42.5%" }}>
-                                    개인정보 취급방침
-                                </Title>
+                                <ColumnLeft>
+                                    <Title style={{ width: "42.5%" }}>
+                                        개인정보 취급방침
+                                    </Title>
+                                </ColumnLeft>
+
                                 <input
                                     style={{
                                         width: "15px",
