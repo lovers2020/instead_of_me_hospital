@@ -69,6 +69,7 @@ export function FirstOverviewCategory() {
                             h="70%"
                             filter="grayscale(100%)"
                             src={require(`../../assets/hat.jpg`)}
+                            alt="학사모"
                         />
                     </Center>
                     <Text fontSize="20px" mt="15px" fontWeight="600">
@@ -81,6 +82,7 @@ export function FirstOverviewCategory() {
                             w="100px"
                             filter="grayscale(100%)"
                             src={require(`../../assets/보건복지부_로고.png`)}
+                            alt="보건복지부 로고"
                         />
                     </Center>
                     <Text fontSize="20px" mt="15px" fontWeight="600">
@@ -93,6 +95,7 @@ export function FirstOverviewCategory() {
                             w="100px"
                             filter="grayscale(100%)"
                             src={require(`../../assets/face-chopping.png`)}
+                            alt="구강악안면학"
                         />
                     </Center>
                     <Text fontSize="20px" mt="15px" fontWeight="600">

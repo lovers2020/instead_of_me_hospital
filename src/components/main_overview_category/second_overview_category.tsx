@@ -39,7 +39,10 @@ export function SecondOverviewCategory() {
         <>
             <Center mt="20px" gap="40px">
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-1.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-1.jpg`)}
+                        alt="First picture"
+                    />
                     <InnerBox>
                         <Text>P</Text>
                         <InnerText>+</InnerText>
@@ -53,7 +56,10 @@ export function SecondOverviewCategory() {
                     </InnerBox>
                 </Container>
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-2.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-2.jpg`)}
+                        alt="Second picture"
+                    />
                     <InnerBox style={{ top: "58%", color: "white" }}>
                         <Text>P</Text>
                         <InnerText>+</InnerText>
@@ -66,7 +72,10 @@ export function SecondOverviewCategory() {
                     </InnerBox>
                 </Container>
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-3.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-3.jpg`)}
+                        alt="Third picture"
+                    />
                     <InnerBox>
                         <Text>P</Text>
                         <InnerText>+</InnerText>
@@ -79,7 +88,10 @@ export function SecondOverviewCategory() {
                     </InnerBox>
                 </Container>
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-4.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-4.jpg`)}
+                        alt="Fourth picture"
+                    />
                     <InnerBox style={{ top: "58%" }}>
                         <Text>P</Text>
                         <InnerText>+</InnerText>

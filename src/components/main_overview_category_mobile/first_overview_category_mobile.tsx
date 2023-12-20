@@ -82,6 +82,7 @@ export function FirstOverviewCategoryMobile() {
                     >
                         <Image
                             w="100px"
+                            h="130px"
                             filter="grayscale(100%)"
                             src={require(`../../assets/보건복지부_로고.png`)}
                         />

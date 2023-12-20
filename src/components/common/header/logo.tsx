@@ -41,6 +41,7 @@ export default function Logo({ text, hideHeader, fontsize }: ILogoText) {
                     w="50px"
                     h="50px"
                     src={require("../../../assets/태극기.png")}
+                    alt="태극기"
                 ></Image>
             </Box>
             <Text fontSize={fontsize} fontWeight="bold" color="rgba(0,0,0,0.7)">

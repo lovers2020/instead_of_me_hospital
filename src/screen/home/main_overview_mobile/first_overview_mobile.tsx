@@ -1,5 +1,5 @@
 import { Box, Center, Heading, Slide, Text } from "@chakra-ui/react";
-import { FirstOverviewCategoryMobile } from "../../../components/main_overview_mobile/first_overview_category_mobile";
+import { FirstOverviewCategoryMobile } from "../../../components/main_overview_category_mobile/first_overview_category_mobile";
 
 export function FirstOverViewMobile() {
     return (

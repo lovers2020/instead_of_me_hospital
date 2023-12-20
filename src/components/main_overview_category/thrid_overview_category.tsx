@@ -62,7 +62,10 @@ export function ThirdOverviewCategory() {
         <>
             <Center mt="20px" gap="40px">
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-5.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-5.jpg`)}
+                        alt="First picture"
+                    />
                     <Wrapper>
                         <InnerBox>
                             <span style={{ marginTop: "5px" }}>
@@ -84,7 +87,10 @@ export function ThirdOverviewCategory() {
                     </Wrapper>
                 </Container>
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-6.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-6.jpg`)}
+                        alt="Second picture"
+                    />
                     <Wrapper>
                         <InnerBox>
                             <span style={{ marginTop: "5px" }}>언론보도</span>
@@ -105,7 +111,10 @@ export function ThirdOverviewCategory() {
                     </Wrapper>
                 </Container>
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-7.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-7.jpg`)}
+                        alt="Third picture"
+                    />
                     <Wrapper>
                         <InnerBox>
                             <span style={{ marginTop: "5px" }}>
@@ -127,7 +136,10 @@ export function ThirdOverviewCategory() {
                     </Wrapper>
                 </Container>
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-8.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-8.jpg`)}
+                        alt="Fourth picture"
+                    />
                     <Wrapper>
                         <InnerBox>
                             <span style={{ marginTop: "5px" }}>치료후기</span>

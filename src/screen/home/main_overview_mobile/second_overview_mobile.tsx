@@ -1,7 +1,7 @@
 import { Box, Slide, Center, Text, Heading } from "@chakra-ui/react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
-import { SecondOverviewCategoryMobile } from "./../../../components/main_overview_mobile/second_overview_category_mobile";
+import { SecondOverviewCategoryMobile } from "../../../components/main_overview_category_mobile/second_overview_category_mobile";
 
 export function SecondOverviewMobile() {
     const { scrollY } = useScroll();

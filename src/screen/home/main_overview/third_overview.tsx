@@ -1,7 +1,7 @@
 import { Box, Center, Heading, Slide, Text } from "@chakra-ui/react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
-import { ThirdOverviewCategory } from "../../../components/main_overview/thrid_overview_category";
+import { ThirdOverviewCategory } from "../../../components/main_overview_category/thrid_overview_category";
 
 export function ThirdOverView() {
     const { scrollY } = useScroll();

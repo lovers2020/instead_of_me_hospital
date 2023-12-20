@@ -28,8 +28,8 @@ const BannerVariants = {
     },
 };
 export const PageDots = styled.button<{ index: number }>`
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border: none;
     border-radius: 50%;
     margin: 0 5px;
@@ -37,8 +37,8 @@ export const PageDots = styled.button<{ index: number }>`
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.7);
     &:nth-child(${(props) => props.index + 1}) {
-        width: 30px;
-        height: 10px;
+        width: 35px;
+        height: 15px;
         border-radius: 5px;
         background-color: #603988;
     }
