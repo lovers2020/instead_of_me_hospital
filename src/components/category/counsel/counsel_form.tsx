@@ -1,5 +1,5 @@
-import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
-import { useForm, FieldErrors } from "react-hook-form";
+import { Box, Center, Heading, Text } from "@chakra-ui/react";
+import { useForm } from "react-hook-form";
 import styled from "styled-components";
 import { useState } from "react";
 

@@ -39,7 +39,10 @@ export function SecondOverviewCategoryMobile() {
         <>
             <Center gap="10px" m="10px 0">
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-1.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-1.jpg`)}
+                        alt="First pic."
+                    />
                     <InnerBox>
                         <Text>P</Text>
                         <InnerText>+</InnerText>
@@ -53,7 +56,10 @@ export function SecondOverviewCategoryMobile() {
                     </InnerBox>
                 </Container>
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-2.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-2.jpg`)}
+                        alt="Second pic."
+                    />
                     <InnerBox style={{ top: "50%", color: "white" }}>
                         <Text>P</Text>
                         <InnerText>+</InnerText>
@@ -68,7 +74,10 @@ export function SecondOverviewCategoryMobile() {
             </Center>
             <Center gap="10px">
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-3.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-3.jpg`)}
+                        alt="Third pic."
+                    />
                     <InnerBox>
                         <Text>P</Text>
                         <InnerText>+</InnerText>
@@ -81,7 +90,10 @@ export function SecondOverviewCategoryMobile() {
                     </InnerBox>
                 </Container>
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-4.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-4.jpg`)}
+                        alt="Last pic."
+                    />
                     <InnerBox style={{ top: "50%" }}>
                         <Text>P</Text>
                         <InnerText>+</InnerText>

@@ -33,13 +33,19 @@ export function ThirdOverviewCategoryMobile() {
         <>
             <Center mt="20px">
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-5.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-5.jpg`)}
+                        alt="First pic."
+                    />
                     <Wrapper>
                         <Text>교정전후사진</Text>
                     </Wrapper>
                 </Container>
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-6.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-6.jpg`)}
+                        alt="Second pic."
+                    />
                     <Wrapper>
                         <Text>언론보도</Text>
                     </Wrapper>
@@ -48,13 +54,19 @@ export function ThirdOverviewCategoryMobile() {
 
             <Center mt="20px">
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-7.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-7.jpg`)}
+                        alt="Third pic."
+                    />
                     <Wrapper>
                         <Text>전문의 칼럼</Text>
                     </Wrapper>
                 </Container>
                 <Container>
-                    <InnerImg src={require(`../../assets/overview-8.jpg`)} />
+                    <InnerImg
+                        src={require(`../../assets/overview-8.jpg`)}
+                        alt="Last pic."
+                    />
                     <Wrapper>
                         <Text>치료후기</Text>
                     </Wrapper>

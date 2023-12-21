@@ -40,7 +40,7 @@ const BannerVariants = {
         };
     },
 };
-export const PageDots = styled.button<{ index: number }>`
+const PageDots = styled.button<{ index: number }>`
     width: 20px;
     height: 20px;
     border: none;

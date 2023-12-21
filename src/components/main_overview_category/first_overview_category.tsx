@@ -8,12 +8,12 @@ const Wrapper = styled.div`
         div {
             border: 5px solid #8b6bae;
             p {
-                font-size: 64px;
+                font-size: 60px;
                 transition: 0.2s linear;
             }
             img {
                 filter: grayscale(0%);
-                scale: 1.3;
+                scale: 1.2;
                 transition: 0.3s linear;
             }
         }
@@ -31,15 +31,13 @@ export function FirstOverviewCategory() {
                         w="210px"
                         h="210px"
                         border="1px solid #c1c1c1"
-                        fontSize="60px"
+                        fontSize="54px"
                         lineHeight="1"
                         fontWeight="700"
                         flexDir="column"
                     >
-                        <p>20</p>
-                        <Text fontSize="54px" fontWeight="400">
-                            YEARS
-                        </Text>
+                        <Text fontWeight="700">20</Text>
+                        <Text fontWeight="400">YEARS</Text>
                     </Center>
                     <Text fontSize="20px" mt="15px" fontWeight="600">
                         치과 진료만 20년 이상

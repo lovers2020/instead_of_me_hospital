@@ -4,7 +4,6 @@ import { reset } from "styled-reset";
 import { StyleSheetManager, createGlobalStyle } from "styled-components";
 import { RecoilRoot } from "recoil";
 import "./styles/fonts/pretendard-subset.css";
-import { HelmetProvider } from "react-helmet-async";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}

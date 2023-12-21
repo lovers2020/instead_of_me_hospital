@@ -66,6 +66,7 @@ export function FirstOverviewCategoryMobile() {
                             h="100%"
                             filter="grayscale(100%)"
                             src={require(`../../assets/hat.jpg`)}
+                            alt="학사모"
                         />
                     </Center>
                     <Text fontSize="14px" mt="15px" fontWeight="600">
@@ -85,6 +86,7 @@ export function FirstOverviewCategoryMobile() {
                             h="130px"
                             filter="grayscale(100%)"
                             src={require(`../../assets/보건복지부_로고.png`)}
+                            alt="보건복지부 로고"
                         />
                     </Center>
                     <Text fontSize="14px" mt="15px" fontWeight="600">

@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Center, Heading, Text } from "@chakra-ui/react";
 import styled from "styled-components";
 import firstImg from "../../../assets/progress-1.jpg";
 import secondImg from "../../../assets/progress-2.jpg";

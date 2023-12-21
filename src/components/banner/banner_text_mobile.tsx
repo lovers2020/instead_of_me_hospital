@@ -61,7 +61,7 @@ export function BannerTextMobile({ index }: any) {
                     </BannerH2>
                     <BannerH1 variants={BannerVariants}>대한민국치과</BannerH1>
                     <BannerH3 variants={BannerVariants}>
-                        - 연세대 출신 의학박사 교정전문의
+                        - 치대 박사 출신 의학박사 교정전문의
                     </BannerH3>
                     <BannerH3 variants={BannerVariants}>
                         - 1인 대표원장 1:1 책임진료

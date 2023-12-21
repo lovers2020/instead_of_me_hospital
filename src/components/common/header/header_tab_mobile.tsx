@@ -50,7 +50,7 @@ export function HeaderTabMobile() {
                 ></CategoryMobile>
 
                 <CategoryBox
-                    onClick={() => setIsClicked(2)}
+                    onClick={() => setIsClicked((prev) => (prev === 2 ? 0 : 2))}
                     id={isClicked === 2 ? "clicked" : ""}
                 >
                     <Text>프리미엄 교정</Text>
@@ -63,7 +63,7 @@ export function HeaderTabMobile() {
                 ></CategoryMobile>
 
                 <CategoryBox
-                    onClick={() => setIsClicked(3)}
+                    onClick={() => setIsClicked((prev) => (prev === 3 ? 0 : 3))}
                     id={isClicked === 3 ? "clicked" : ""}
                 >
                     <Text>치아교정</Text>
@@ -76,7 +76,7 @@ export function HeaderTabMobile() {
                 ></CategoryMobile>
 
                 <CategoryBox
-                    onClick={() => setIsClicked(4)}
+                    onClick={() => setIsClicked((prev) => (prev === 4 ? 0 : 4))}
                     id={isClicked === 4 ? "clicked" : ""}
                 >
                     <Text>커뮤니티</Text>
@@ -89,7 +89,7 @@ export function HeaderTabMobile() {
                 ></CategoryMobile>
 
                 <CategoryBox
-                    onClick={() => setIsClicked(5)}
+                    onClick={() => setIsClicked((prev) => (prev === 5 ? 0 : 5))}
                     id={isClicked === 5 ? "clicked" : ""}
                 >
                     <Text>온라인상담</Text>

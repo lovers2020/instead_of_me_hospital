@@ -27,7 +27,7 @@ const BannerVariants = {
         };
     },
 };
-export const PageDots = styled.button<{ index: number }>`
+const PageDots = styled.button<{ index: number }>`
     width: 15px;
     height: 15px;
     border: none;
