@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/instead_of_me_hospital/static/css/main.a87c4b34.css",
-    "main.js": "/instead_of_me_hospital/static/js/main.19d5241b.js",
+    "main.js": "/instead_of_me_hospital/static/js/main.5bb7c223.js",
     "static/media/dentist2.jpg": "/instead_of_me_hospital/static/media/dentist2.39ee2c0ad0d536c943c5.jpg",
     "static/media/clinic.jpg": "/instead_of_me_hospital/static/media/clinic.d0ac42facf6f2fd13682.jpg",
     "static/media/progress-4.jpg": "/instead_of_me_hospital/static/media/progress-4.4d176256bd92ce148f07.jpg",
@@ -51,10 +51,10 @@
     "static/media/invisalign.png": "/instead_of_me_hospital/static/media/invisalign.1417a7a4833d08d435b9.png",
     "index.html": "/instead_of_me_hospital/index.html",
     "main.a87c4b34.css.map": "/instead_of_me_hospital/static/css/main.a87c4b34.css.map",
-    "main.19d5241b.js.map": "/instead_of_me_hospital/static/js/main.19d5241b.js.map"
+    "main.5bb7c223.js.map": "/instead_of_me_hospital/static/js/main.5bb7c223.js.map"
   },
   "entrypoints": [
     "static/css/main.a87c4b34.css",
-    "static/js/main.19d5241b.js"
+    "static/js/main.5bb7c223.js"
   ]
 }
